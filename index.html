@@ -132,6 +132,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .fact b { display:block; font-family:"Cormorant Garamond",serif; font-size:30px; font-weight:500; margin-bottom:8px; }
     .fact span { font-size:12px; color:#666055; }
 
+    .lead_form {
+      background:#ded8ca; color:#181713;
+      display:grid; grid-template-columns:.8fr 1.2fr; gap:8vw;
+    }
+    .lead_form p { color:#48453d; font-size:17px; max-width:680px; }
+    .facts { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:rgba(0,0,0,.13); }
+    .fact { background:#ded8ca; padding:25px; min-height:130px; }
+    .fact b { display:block; font-family:"Cormorant Garamond",serif; font-size:30px; font-weight:500; margin-bottom:8px; }
+    .fact span { font-size:12px; color:#666055; }
+	
+	.lead_form h2 {
+      font-family:"Cormorant Garamond",serif; font-size:clamp(58px,8vw,110px);
+      font-weight:500; line-height:.86; margin:0 0 25px;
+    }
+	
     .contact {
       min-height:62vh; display:grid; place-items:center; text-align:center;
       background:
@@ -160,10 +175,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .navlinks { display:none; }
       .hero { min-height:86svh; }
       .hero-image { object-position:57% center; }
-      .intro,.work,.artist { grid-template-columns:1fr; }
+      .intro,.work,.artist, .lead_form { grid-template-columns:1fr; }
       section { padding:80px 6vw; }
       .work { gap:45px; }
       .artist { gap:45px; }
+	  .lead_form { gap:45px; }
       .facts { grid-template-columns:1fr 1fr; }
       .scroll { display:none; }
     }
@@ -244,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>
           Микола Жулінський — український живописець, художник монументально-
           декоративного мистецтва та педагог. Працює у галузі монументального
-          і станкового живопису, графіки та декоративної пластики.
+          і станкового живопису, графіки.
         </p>
         <p>
           Його творчість пов’язана з асоціативно-філософським осмисленням
@@ -271,6 +287,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="button" href="https://www.saatchiart.com/mykolazhulinskyi" target="_blank" rel="noopener">
           Профіль художника
         </a>
+      </div>
+    </section>
+	    <section class="lead_form" id="lead_form">
+      <div>
+        <div class="lead_form">Бажаєте обрати картини, що підходять саме Вам. </div>
+        <hf2>Перевіримо?</h2>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfhVhZvkSgTXp7va2OaHbUX_kookXkAMJVodWX1cTyjqlgKA/viewform?embedded=true" 
+width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Завантаження…</iframe>
+
       </div>
     </section>
   </main>
